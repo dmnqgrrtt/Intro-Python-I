@@ -30,3 +30,26 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+
+
+if len(sys.argv) >= 2:
+  month = sys.argv[1]
+else: 
+  month = datetime.now().month
+
+
+if len(sys.argv) >= 3:
+  year = sys.argv[2]
+else:
+  year = datetime.now().year
+
+def getCalendar(year, month ):
+  try:
+    print(calendar.month(int(year),int(month)))
+  except:
+    print("please enter the month and year as whole numbers. ex: 7 2015")
+    
+  
+
+getCalendar(year, month)

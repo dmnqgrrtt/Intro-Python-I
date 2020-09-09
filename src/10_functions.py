@@ -10,3 +10,18 @@ num = int(num)
 
 # YOUR CODE HERE
 
+def findEven(x):
+    if(x % 2 == 0):
+        return True
+    else:
+        return False
+
+if(findEven(num)):
+    print("Even!")
+else:
+    print("Odd")
+
+
+    
+
+
